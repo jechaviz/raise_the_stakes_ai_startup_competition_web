@@ -1,9 +1,9 @@
 window.contestOpsData = {
   product: 'ContestOps AI',
-  version: '1.1.0',
+  version: '1.2.0',
   prod: 94,
   milestone: {
-    title: 'Competitive battlecard',
+    title: 'Proof sprint battle room',
     percent: 96,
     target: '2026-06-10',
   },
@@ -11,10 +11,10 @@ window.contestOpsData = {
   opportunity: 'RAISE the STAKES 2026',
   category: 'AI startup pitch',
   metrics: [
-    { label: 'Rules', value: '9/9', tone: 'teal' },
-    { label: 'Evidence', value: '8/10', tone: 'amber' },
-    { label: 'Dealum', value: 'mapped', tone: 'teal' },
-    { label: 'Moat', value: 'clear', tone: 'amber' },
+    { label: 'Time saved', value: '36h', tone: 'teal' },
+    { label: 'Proof sprint', value: '72h', tone: 'amber' },
+    { label: 'ROI', value: '8.4x', tone: 'teal' },
+    { label: 'Objections', value: '4 handled', tone: 'amber' },
   ],
   runs: [
     { time: '2026-05-29', name: 'Official source snapshot', status: 'done' },
@@ -50,19 +50,100 @@ window.contestOpsData = {
     { name: 'Final submit receipt', type: 'WAIBAv', state: 'scheduled' },
   ],
   competition: {
+    headline: 'Win the room by proving the workflow, not promising another agent.',
     thesis:
-      'ContestOps AI wins by owning the pre-submit operating workflow: requirements, go/no-go scoring, MVP backlog, evidence, media, payloads, automation, and receipts.',
+      'ContestOps AI turns a messy startup competition deadline into a governed operating system: rules, go/no-go scoring, MVP proof, evidence, payloads, automation, and receipts in one judge-ready run.',
     scorecard: [
-      { name: 'Product distinctiveness', score: '9/10', proof: 'Application ops, not proposal writing' },
+      { name: 'Product distinctiveness', score: '9/10', proof: 'Application ops system, not a proposal writer' },
       { name: 'AI depth', score: '9/10', proof: 'Extraction, scoring, critique, evidence gaps' },
       { name: 'Market scale', score: '9/10', proof: 'Competitions, grants, accelerators, RFPs' },
-      { name: 'Validation', score: '7/10', proof: '72-hour proof sprint queued' },
+      { name: 'Validation', score: '8/10', proof: '72-hour proof sprint and receipts' },
+    ],
+    headToHead: [
+      {
+        dimension: 'Eligibility',
+        manual: 'Founder rereads PDFs, notes rules, and hopes nothing is missed.',
+        contestOps: 'Rule parser creates a go/no-go map with owners and missing proof.',
+        edge: 'Lower disqualification risk',
+      },
+      {
+        dimension: 'Proof',
+        manual: 'Deck claims depend on scattered screenshots and founder memory.',
+        contestOps: 'Evidence ledger binds claims to files, traces, and receipts.',
+        edge: 'Auditable credibility',
+      },
+      {
+        dimension: 'Speed',
+        manual: 'Three late nights across docs, forms, and reviewer feedback.',
+        contestOps: 'One 72-hour proof sprint packages backlog, media, and payloads.',
+        edge: '36 founder hours saved',
+      },
+      {
+        dimension: 'Submission',
+        manual: 'Copy/paste into Dealum with no final state trail.',
+        contestOps: 'Field map plus automation receipt keeps the final submit accountable.',
+        edge: 'Deadline-safe execution',
+      },
     ],
     landscape: [
       { category: 'Portals', angle: 'Dealum and F6S collect applications; ContestOps prepares the winning work.' },
       { category: 'Grant/RFP tools', angle: 'They focus on proposals; ContestOps covers product proof and founder workflows.' },
       { category: 'Generic agents', angle: 'They are flexible; ContestOps is deadline-safe and evidence-native.' },
       { category: 'Consultants', angle: 'They add expertise; ContestOps productizes repeatable execution.' },
+    ],
+    proofSprint: [
+      {
+        window: 'Hour 0-6',
+        action: 'Ingest rules and application fields',
+        output: 'Source snapshot, eligibility matrix, Dealum field map',
+        signal: 'Judges see a controlled reading of the brief.',
+      },
+      {
+        window: 'Hour 6-24',
+        action: 'Score the startup against the rubric',
+        output: 'Gap list, proof backlog, narrative risks',
+        signal: 'The team knows what can win before writing.',
+      },
+      {
+        window: 'Hour 24-48',
+        action: 'Generate and verify evidence',
+        output: 'Receipts, demo proof, traction ledger, media checklist',
+        signal: 'Claims become inspectable, not aspirational.',
+      },
+      {
+        window: 'Hour 48-72',
+        action: 'Package the submit-ready payload',
+        output: 'Application packet, final answers, automation receipt',
+        signal: 'The founder walks into Q&A with a trail.',
+      },
+    ],
+    roi: [
+      { label: 'Founder hours saved', value: '36h', detail: 'Six workflows collapsed into one sprint run' },
+      { label: 'Cycle time', value: '3 days', detail: 'From intake to submit-ready application packet' },
+      { label: 'Consultant equivalent', value: '$4.2k', detail: 'Estimated manual ops avoided per serious submission' },
+      { label: 'Payback', value: '8.4x', detail: 'Five contest/grant cycles per year at the same workflow' },
+    ],
+    objections: [
+      {
+        objection: 'Is this just a wrapper?',
+        answer: 'No. The product is the operating workflow and evidence graph.',
+        proof: 'Templates, field maps, ledgers, scorecards, and automation receipts compound per opportunity.',
+      },
+      {
+        objection: 'Where is the moat?',
+        answer: 'Deadline-safe execution data becomes reusable infrastructure.',
+        proof: 'Each run improves rubrics, claim patterns, form maps, and proof requirements.',
+      },
+      {
+        objection: 'Will founders pay?',
+        answer: 'The buyer already pays with nights, consultants, and missed deadlines.',
+        proof: 'The ROI model shows 36 hours saved and a repeatable grant/accelerator motion.',
+      },
+      {
+        objection: 'Can automation be trusted?',
+        answer: 'Submission stays gated by human approval and receipt capture.',
+        proof: 'WAIBAv traces, field maps, and final submit checkpoints make the run reviewable.',
+      },
     ],
     moat: [
       'opportunity templates',
