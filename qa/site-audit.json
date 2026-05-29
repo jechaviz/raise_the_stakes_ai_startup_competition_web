@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "target": "C:\\git\\websites\\raise_the_stakes_ai_startup_competition",
+  "generatedAt": "2026-05-29T21:51:18.894Z",
+  "config": {
+    "maxLines": 600,
+    "manifest": null,
+    "ignoredPaths": []
+  },
+  "summary": {
+    "total": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "files": {
+    "expected": [],
+    "actual": [
+      ".gitignore",
+      "assets/workflow-preview.png",
+      "index.html",
+      "package-lock.json",
+      "package.json",
+      "qa/render.spec.mjs",
+      "README.md",
+      "scripts/static-server.mjs",
+      "src/App.vue",
+      "src/components/AutomationPanel.vue",
+      "src/components/ChecklistPanel.vue",
+      "src/components/EvidenceLedger.vue",
+      "src/components/MetricStrip.vue",
+      "src/components/RunLedger.vue",
+      "src/components/StatusRail.vue",
+      "src/data.js",
+      "src/styles/app.css"
+    ],
+    "missing": [],
+    "unexpected": []
+  },
+  "externalDataSources": [],
+  "issues": []
+}
