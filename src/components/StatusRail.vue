@@ -52,6 +52,7 @@ export default {
         { id: 'runs', label: 'Runs', icon: 'activity' },
         { id: 'checklist', label: 'Rules', icon: 'list-checks' },
         { id: 'evidence', label: 'Evidence', icon: 'folder-check' },
+        { id: 'competition', label: 'Competition', icon: 'radar' },
         { id: 'automation', label: 'Automation', icon: 'bot' },
       ],
     };

@@ -1,10 +1,10 @@
 window.contestOpsData = {
   product: 'ContestOps AI',
-  version: '0.5.0',
-  prod: 86,
+  version: '1.1.0',
+  prod: 94,
   milestone: {
-    title: 'RAISE application packet',
-    percent: 90,
+    title: 'Competitive battlecard',
+    percent: 96,
     target: '2026-06-10',
   },
   deadline: 'June 10 hard deadline',
@@ -14,13 +14,14 @@ window.contestOpsData = {
     { label: 'Rules', value: '9/9', tone: 'teal' },
     { label: 'Evidence', value: '8/10', tone: 'amber' },
     { label: 'Dealum', value: 'mapped', tone: 'teal' },
-    { label: 'Traction', value: 'collect', tone: 'red' },
+    { label: 'Moat', value: 'clear', tone: 'amber' },
   ],
   runs: [
     { time: '2026-05-29', name: 'Official source snapshot', status: 'done' },
     { time: '2026-05-29', name: 'RAISE V profile manifest', status: 'done' },
     { time: '2026-05-29', name: 'Application packet', status: 'done' },
     { time: '2026-05-29', name: 'Dealum draft receipt', status: 'done' },
+    { time: '2026-05-29', name: 'Competitive battlecard', status: 'done' },
     { time: '2026-06-10', name: 'Authenticated final submit', status: 'next' },
   ],
   checklist: [
@@ -38,6 +39,7 @@ window.contestOpsData = {
     { name: 'V manifest', state: 'active', path: 'evidence/public/manifest.json' },
     { name: 'Application packet', state: 'active', path: 'docs/APPLICATION_PACKET.md' },
     { name: 'Dealum payload', state: 'active', path: 'submission/dealum_payload.json' },
+    { name: 'Battlecard', state: 'active', path: 'docs/COMPETITIVE_BATTLECARD.md' },
     { name: 'WAIBAv trace', state: 'active', path: 'automation/output' },
     { name: 'Traction ledger', state: 'planned', path: 'evidence/private/traction' },
   ],
@@ -47,4 +49,28 @@ window.contestOpsData = {
     { name: 'Form field map', type: 'YAML', state: 'ready' },
     { name: 'Final submit receipt', type: 'WAIBAv', state: 'scheduled' },
   ],
+  competition: {
+    thesis:
+      'ContestOps AI wins by owning the pre-submit operating workflow: requirements, go/no-go scoring, MVP backlog, evidence, media, payloads, automation, and receipts.',
+    scorecard: [
+      { name: 'Product distinctiveness', score: '9/10', proof: 'Application ops, not proposal writing' },
+      { name: 'AI depth', score: '9/10', proof: 'Extraction, scoring, critique, evidence gaps' },
+      { name: 'Market scale', score: '9/10', proof: 'Competitions, grants, accelerators, RFPs' },
+      { name: 'Validation', score: '7/10', proof: '72-hour proof sprint queued' },
+    ],
+    landscape: [
+      { category: 'Portals', angle: 'Dealum and F6S collect applications; ContestOps prepares the winning work.' },
+      { category: 'Grant/RFP tools', angle: 'They focus on proposals; ContestOps covers product proof and founder workflows.' },
+      { category: 'Generic agents', angle: 'They are flexible; ContestOps is deadline-safe and evidence-native.' },
+      { category: 'Consultants', angle: 'They add expertise; ContestOps productizes repeatable execution.' },
+    ],
+    moat: [
+      'opportunity templates',
+      'field maps',
+      'judging scorecards',
+      'evidence ledgers',
+      'automation receipts',
+      'V + WAIBAv runtime',
+    ],
+  },
 };

@@ -14,6 +14,9 @@ test('RAISE application workspace renders', async ({ page }) => {
   await page.waitForTimeout(2000);
   try {
     await expect(page.getByText('RAISE the STAKES 2026').first()).toBeVisible({ timeout: 20000 });
+    await page.getByRole('tab', { name: 'Competition' }).click();
+    await expect(page.getByText('Product distinctiveness')).toBeVisible();
+    await expect(page.getByText('Application ops, not proposal writing')).toBeVisible();
   } catch (error) {
     console.log(JSON.stringify(browserEvents, null, 2));
     console.log((await page.content()).slice(0, 1600));

@@ -412,6 +412,74 @@ code {
   background: #ffffff;
 }
 
+.competition-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 1120px;
+}
+
+.competition-wide {
+  grid-column: 1 / -1;
+}
+
+.score-list,
+.competitor-list {
+  display: grid;
+  gap: 10px;
+}
+
+.score-row,
+.competitor-row {
+  display: grid;
+  gap: 6px;
+  min-height: 58px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edf1f4;
+}
+
+.score-row {
+  grid-template-columns: minmax(0, 1fr) 72px;
+  align-items: center;
+}
+
+.score-row span,
+.competitor-row span,
+.competition-thesis {
+  color: var(--muted);
+}
+
+.score-badge {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
+  border-radius: 8px;
+  background: #dff4ed;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.competition-thesis {
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+.moat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.moat-grid span {
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #d7e5de;
+  border-radius: 8px;
+  background: #f4faf7;
+  color: var(--green);
+  font-weight: 700;
+}
+
 svg {
   width: 18px;
   height: 18px;
@@ -428,7 +496,7 @@ svg {
   }
 
   .rail-nav {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .rail-nav button {
@@ -441,7 +509,9 @@ svg {
 
   .metric-strip,
   .view-grid,
-  .evidence-grid {
+  .evidence-grid,
+  .competition-layout,
+  .moat-grid {
     grid-template-columns: 1fr;
   }
 

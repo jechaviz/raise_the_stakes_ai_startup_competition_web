@@ -51,6 +51,11 @@
         :items="data.evidence"
       />
 
+      <CompetitionPanel
+        v-else-if="activeTab === 'competition'"
+        :data="data.competition"
+      />
+
       <AutomationPanel
         v-else
         :items="data.automations"
@@ -65,6 +70,7 @@ import MetricStrip from '/src/components/MetricStrip.vue';
 import RunLedger from '/src/components/RunLedger.vue';
 import ChecklistPanel from '/src/components/ChecklistPanel.vue';
 import EvidenceLedger from '/src/components/EvidenceLedger.vue';
+import CompetitionPanel from '/src/components/CompetitionPanel.vue';
 import AutomationPanel from '/src/components/AutomationPanel.vue';
 
 export default {
@@ -74,6 +80,7 @@ export default {
     RunLedger,
     ChecklistPanel,
     EvidenceLedger,
+    CompetitionPanel,
     AutomationPanel,
   },
   data() {
@@ -84,6 +91,7 @@ export default {
         { id: 'runs', label: 'Runs', icon: 'activity' },
         { id: 'checklist', label: 'Rules', icon: 'list-checks' },
         { id: 'evidence', label: 'Evidence', icon: 'folder-check' },
+        { id: 'competition', label: 'Competition', icon: 'radar' },
         { id: 'automation', label: 'Automation', icon: 'bot' },
       ],
       flash: false,
