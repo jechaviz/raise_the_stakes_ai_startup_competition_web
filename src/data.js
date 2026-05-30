@@ -1,7 +1,7 @@
 window.contestOpsData = {
   product: 'ContestOps AI',
-  version: '1.2.0',
-  prod: 94,
+  version: '1.4.0',
+  prod: 98,
   milestone: {
     title: 'Proof sprint battle room',
     percent: 96,
@@ -14,11 +14,14 @@ window.contestOpsData = {
     { label: 'Time saved', value: '36h', tone: 'teal' },
     { label: 'Proof sprint', value: '72h', tone: 'amber' },
     { label: 'ROI', value: '8.4x', tone: 'teal' },
-    { label: 'Objections', value: '4 handled', tone: 'amber' },
+    { label: 'Targets', value: '100', tone: 'amber' },
   ],
   runs: [
     { time: '2026-05-29', name: 'Official source snapshot', status: 'done' },
     { time: '2026-05-29', name: 'RAISE V profile manifest', status: 'done' },
+    { time: '2026-05-29', name: 'VImport redacted profile shape', status: 'done' },
+    { time: '2026-05-29', name: 'WAIBAv profile boundary receipt', status: 'done' },
+    { time: '2026-05-29', name: 'LinkedIn 100 target list', status: 'done' },
     { time: '2026-05-29', name: 'Application packet', status: 'done' },
     { time: '2026-05-29', name: 'Dealum draft receipt', status: 'done' },
     { time: '2026-05-29', name: 'Competitive battlecard', status: 'done' },
@@ -41,10 +44,16 @@ window.contestOpsData = {
     { name: 'Dealum payload', state: 'active', path: 'submission/dealum_payload.json' },
     { name: 'Battlecard', state: 'active', path: 'docs/COMPETITIVE_BATTLECARD.md' },
     { name: 'WAIBAv trace', state: 'active', path: 'automation/output' },
+    { name: 'Redacted profile proof', state: 'active', path: 'docs/PROFILE_BASED_APPLICATION_UPGRADE.md' },
+    { name: 'VImport redacted manifest', state: 'active', path: 'evidence/public/redacted_source_manifest.json' },
+    { name: 'LinkedIn 100 targets', state: 'active', path: 'docs/LINKEDIN_OUTREACH_TARGETS_100.md' },
+    { name: 'Dealum field notes', state: 'active', path: 'docs/DEALUM_FIELD_NOTES.md' },
     { name: 'Traction ledger', state: 'planned', path: 'evidence/private/traction' },
   ],
   automations: [
     { name: 'Dealum draft prepare', type: 'WAIBAv', state: 'ready' },
+    { name: 'Profile private scan', type: 'WAIBAv', state: 'ready' },
+    { name: 'Redacted profile manifest', type: 'VImport', state: 'ready' },
     { name: 'Dealum live form', type: 'WAIBAv', state: 'scheduled' },
     { name: 'Form field map', type: 'YAML', state: 'ready' },
     { name: 'Final submit receipt', type: 'WAIBAv', state: 'scheduled' },
@@ -57,7 +66,7 @@ window.contestOpsData = {
       { name: 'Product distinctiveness', score: '9/10', proof: 'Application ops system, not a proposal writer' },
       { name: 'AI depth', score: '9/10', proof: 'Extraction, scoring, critique, evidence gaps' },
       { name: 'Market scale', score: '9/10', proof: 'Competitions, grants, accelerators, RFPs' },
-      { name: 'Validation', score: '8/10', proof: '72-hour proof sprint and receipts' },
+      { name: 'Validation', score: '8/10', proof: 'Profile proof, 72-hour sprint, and outreach targets' },
     ],
     headToHead: [
       {
@@ -83,6 +92,12 @@ window.contestOpsData = {
         manual: 'Copy/paste into Dealum with no final state trail.',
         contestOps: 'Field map plus automation receipt keeps the final submit accountable.',
         edge: 'Deadline-safe execution',
+      },
+      {
+        dimension: 'Founder proof',
+        manual: 'Personal evidence risks leaking sensitive raw files.',
+        contestOps: 'VImport emits a redacted role-level manifest before AI shaping.',
+        edge: 'Proof without PII',
       },
     ],
     landscape: [
@@ -150,6 +165,7 @@ window.contestOpsData = {
       'field maps',
       'judging scorecards',
       'evidence ledgers',
+      'redacted profile manifests',
       'automation receipts',
       'V + WAIBAv runtime',
     ],
